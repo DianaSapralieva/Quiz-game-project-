@@ -11,11 +11,11 @@ class QuizBrain:
 
 
     def check_answer(self, user_answer, correct_answer):
-        if user_answer == correct_answer:
+        if user_answer.lower() == correct_answer.lower():
             print("You got it right!")
             self.score+=1 
         else:
-            print("Wrong answer") 
+            print("Wrong answer","\nthe correct answer was",correct_answer) 
 
     def next_question(self):
         current_question = self.question_list[self.question_number]
