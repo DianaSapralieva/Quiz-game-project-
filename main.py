@@ -18,4 +18,5 @@ obj= QuizBrain(list1)
 
 while obj.still_has_questions():
     next_question = obj.next_question()
-    
+
+print("Final score:", obj.score, "/", len(obj.question_list))    
