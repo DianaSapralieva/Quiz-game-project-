@@ -14,4 +14,8 @@ for value in question_data:
 # print(list1[0].answer)
 
 obj= QuizBrain(list1)
-next_question = obj.next_question()
+
+
+while obj.still_has_questions():
+    next_question = obj.next_question()
+    
